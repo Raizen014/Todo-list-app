@@ -3,7 +3,7 @@ window.addEventListener('load', () => {
     const input = document.querySelector("#newtask-input");
     const list_el = document.querySelector("#tasks");
 
-    // Load tasks from local storage on page load
+
     loadTasksFromLocalStorage();
 
     form.addEventListener('submit', (e) => {
@@ -19,7 +19,7 @@ window.addEventListener('load', () => {
         const task_el = createTaskElement(task);
         list_el.appendChild(task_el);
 
-        // Save tasks to local storage
+
         saveTasksToLocalStorage();
 
         input.value = "";
@@ -47,18 +47,18 @@ window.addEventListener('load', () => {
 
         const task_edit_el = document.createElement("button");
         task_edit_el.classList.add("edit");
-        task_edit_el.innerHTML = "Edit";
+        task_edit_el.innerHTML = "<span></span>";
 
         const task_delete_el = document.createElement("button");
         task_delete_el.classList.add("delete");
-        task_delete_el.innerHTML = "Delete";
+        task_delete_el.innerHTML = "<span></span>";
 
         task_actions_el.appendChild(task_edit_el);
         task_actions_el.appendChild(task_delete_el);
 
         task_el.appendChild(task_actions_el);
 
-        // Event listener for the edit button
+       
         task_edit_el.addEventListener('click', () => {
             if (task_edit_el.innerText.toLowerCase() == "edit") {
                 task_input_el.removeAttribute("readonly");
@@ -67,15 +67,15 @@ window.addEventListener('load', () => {
             } else {
                 task_input_el.setAttribute("readonly", "readonly");
                 task_edit_el.innerText = "Edit";
-                // Save tasks to local storage after editing
+              
                 saveTasksToLocalStorage();
             }
         });
 
-        // Event listener for the delete button
+ 
         task_delete_el.addEventListener('click', () => {
             list_el.removeChild(task_el);
-            // Save tasks to local storage after deletion
+
             saveTasksToLocalStorage();
         });
 
