@@ -151,10 +151,18 @@ main {
     cursor: pointer;
 } 
 
-#tasks .actions button:hover {
-    opacity: 0.8;
-} 
+.task .actions .edit {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAABTUlEQVR4nO2UvUrEQBCAU6i1L+A7iKDYiM9gYbuTyodQDosDWwudOe4VPO+vsPYFBMlMOsH2GsVHUGaTcCQHl7273YBcBoaQZTPfx2R2o6iNNgLF+evtDjB1QOjTJlNH16Im4uqtvwtMAxD6LSfeNAI3jM8KNIzfJu2dxAmdWQGmj0bhcfJwpOuQ0KmzACy0rSaZBvpvMzgNq3B96rtdF7r2K8BzOAiOlsGLvc4CkWOU4EI/seCxrZM+HgLTVyZFQ93nVBBWELBtFxp7g68icJk+7XmHuwoEg7sIKBwYp0sHTnCk8LVuPqgRMNy7qDlq4wKuk+9dABi7+Z67KhyEJtqhbF92FXsXMIIv+blGlZifc5wWcJc66wswzRYvpDI8mEAseJBP+Mx2grGrM1GFBxOA9/t9ldi0TpgPK9EKQPsLZMMhBE/5/wTa2Lr4A7QVlPCrwripAAAAAElFTkSuQmCC") no-repeat center center;
+}
 
-#tasks .actions button:active {
-    opacity: 0.6;
-} 
+.task .actions .delete {
+    content: '';
+    display:block;
+    width: 30px;
+    height: 30px;
+    background: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAACXBIWXMAAAsTAAALEwEAmpwYAAABaUlEQVR4nGNgGAUMDAz/GRgYT7q7N5yxtxehNEBOu7tnnHR1NSDK0lOenitvJiZ+Oe3tfZMSy095eBRcjYx8e87f/wVey0GWnvHyWnovM/PT9/7+/28bGv6e9fK6To7lJ728ckGWfuvr+/+5o+P/OT+/5yddXEywKj7t5bXifmbmZ5ClMPymru4vqT4/4+1dcA1qKcycT+3t/8/6+j4/6uqqg2mxp2cOzJXIlpPic2SfoptxBp8ZlFiOy9LXtbXEhRo5llNsKTmWU81SUiynuqX4UijcYE/Pp9eioqhvKQyc8fTMvxoZ+QbdgvfNzf9pZimhYKeppYR8TlNLkcpe+lp8EkfqJbeEo8inNE1cZwYiO50konCgRsWCAkgpkahm+UkyikGKLT9JQdlLtuUnqVDgk2X56YFq+vyHNfYyMj4R1Vwh0uegxt5ZP78XOBt7KM3bhITPlBYE0LL9LdhSYtvWdG/QMwx3AAAzz6GFiG7z5wAAAABJRU5ErkJggg==") no-repeat center center;
+}
