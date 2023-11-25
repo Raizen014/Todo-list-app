@@ -19,7 +19,7 @@ window.addEventListener('load', () => {
         const task_el = createTaskElement(task);
         list_el.appendChild(task_el);
 
-
+ 
         saveTasksToLocalStorage();
 
         input.value = "";
@@ -58,7 +58,6 @@ window.addEventListener('load', () => {
 
         task_el.appendChild(task_actions_el);
 
-       
         task_edit_el.addEventListener('click', () => {
             if (task_edit_el.innerText.toLowerCase() == "edit") {
                 task_input_el.removeAttribute("readonly");
@@ -67,12 +66,12 @@ window.addEventListener('load', () => {
             } else {
                 task_input_el.setAttribute("readonly", "readonly");
                 task_edit_el.innerText = "Edit";
-              
+                
                 saveTasksToLocalStorage();
             }
         });
 
- 
+      delete button
         task_delete_el.addEventListener('click', () => {
             list_el.removeChild(task_el);
 
